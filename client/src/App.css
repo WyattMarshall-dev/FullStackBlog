@@ -1,0 +1,304 @@
+/* stylelint-disable selector-list-comma-newline-after */
+
+body {
+  background-color: rgb(233, 225, 216);
+}
+
+* {
+  /* border: 1px solid red; */
+  box-sizing: border-box;
+}
+
+.blog-header {
+  line-height: 1;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.blog-header-logo {
+  font-family: "Playfair Display", Georgia, "Times New Roman",
+    serif /*rtl:Amiri, Georgia, "Times New Roman", serif*/;
+  font-size: 2.25rem;
+}
+
+.blog-header-logo:hover {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playfair Display", Georgia, "Times New Roman",
+    serif /*rtl:Amiri, Georgia, "Times New Roman", serif*/;
+}
+
+.display-4 {
+  font-size: 2.5rem;
+}
+
+.nav-scroller {
+  position: relative;
+  z-index: 2;
+  height: 2.75rem;
+  overflow-y: hidden;
+}
+
+.nav-scroller .nav {
+  display: flex;
+  flex-wrap: nowrap;
+  padding-bottom: 1rem;
+  margin-top: -1px;
+  overflow-x: auto;
+  text-align: center;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+
+.nav-scroller .nav-link {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  font-size: 0.875rem;
+}
+
+.card-img-right {
+  height: 100%;
+  border-radius: 0 3px 3px 0;
+}
+
+.flex-auto {
+  flex: 0 0 auto;
+}
+
+.h-250 {
+  height: 250px;
+}
+
+/* Pagination */
+.blog-pagination {
+  margin-bottom: 4rem;
+}
+.blog-pagination > .btn {
+  border-radius: 2rem;
+}
+
+/*
+ * Blog posts
+ */
+.blog-post {
+  margin-bottom: 4rem;
+}
+.blog-post-title {
+  margin-bottom: 0.25rem;
+  font-size: 2.5rem;
+}
+.blog-post-meta {
+  margin-bottom: 1.25rem;
+  color: #727272;
+}
+
+/*
+ * Footer
+ */
+.blog-footer {
+  padding: 2.5rem 0;
+  color: #727272;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-top: 0.05rem solid #e5e5e5;
+}
+.blog-footer p:last-child {
+  margin-bottom: 0;
+}
+
+/* ==================================== CUSTOM STYLES ==================================== */
+
+/* ================= HERO BANNER ================= */
+.hero-banner {
+  background: url(./assets/posedImg.jpg) right top no-repeat,
+    linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 79, 98, 0.2) 0%,
+      rgb(53, 53, 53) 0%
+    );
+  background-position: 60% top;
+  background-blend-mode: darken;
+}
+
+/* ================= FEATURED IMG ================= */
+.feature-img {
+  height: 250px;
+  width: 200px;
+}
+
+.feat-img {
+  width: 250px;
+  position: relative;
+  top: -50%;
+}
+
+/* =================  ================= */
+.bg-theme {
+  background-color: rgb(0, 79, 98);
+}
+
+.card-img-bt {
+  overflow: hidden;
+  max-height: 250px;
+}
+
+.card-img-bottom {
+  position: relative;
+  max-width: 100%;
+}
+
+.aboutImg {
+  overflow: hidden;
+  max-width: 600px;
+  max-height: 600px;
+}
+
+.aboutImg > img {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  /* transform: translateX(-50%); */
+  transform: translate(-50%, -20%);
+}
+
+.push {
+  margin-left: auto;
+}
+
+.active {
+  border-bottom: 2px solid rgb(0, 79, 98);
+  /* border-radius: 3px; */
+}
+
+:focus {
+  outline: 2px dotted rgb(0, 79, 98);
+}
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  /* rtl:remove */
+  letter-spacing: -0.05rem;
+}
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+/* this was 768px */
+@media (min-width: 48em) {
+  .h-md-250 {
+    height: 250px;
+  }
+  .display-4 {
+    font-size: 3rem;
+  }
+  .featurette-heading {
+    font-size: 50px;
+  }
+  .hero-banner {
+    background: url(./assets/posedImg.jpg) center top no-repeat,
+      linear-gradient(
+        to left,
+        rgba(0, 0, 0, 0) 0%,
+        rgb(47, 47, 47) 45%,
+        rgb(39, 39, 39) 55%
+      );
+    background-blend-mode: darken;
+  }
+}
+
+/* @media (min-width: 40em) {
+  Bump up size of carousel content 
+  .featurette-heading {
+    font-size: 50px;
+  }
+} */
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+  .hero-banner {
+    background: url(./assets/posedImg.jpg) center top no-repeat,
+      linear-gradient(
+        to left,
+        rgba(0, 0, 0, 0) 0%,
+        rgb(47, 47, 47) 50%,
+        rgb(39, 39, 39) 60%
+      );
+    background-blend-mode: darken;
+  }
+}
+
+.weather-icon {
+  font-size: 12em;
+}
+
+.foot-login {
+  background-color: black;
+}
+
+.foot-list {
+  align-items: center;
+}
+
+.foot-logo {
+}
+
+/* //////////////////////// */
+
+.login-form {
+  display: flex;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #f5f5f5;
+  height: 100vh;
+}
+
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
+
+.form-signin .checkbox {
+  font-weight: 400;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.unauth {
+  height: 100vh;
+  align-items: center;
+}
